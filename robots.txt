@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-SITE-URL.com/sitemap.xml
+Sitemap: https://bandiliswaroop.github.io/Movie-review-search/sitemap.xml
