@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Review & Search — IMDb Rating, Plot, Trailer, Where to Watch</title>
+  <meta name="description" content="Free movie review & search. Search any film to get instant review: IMDb rating, plot summary, cast, director, trailer link & where to stream or buy.">
+  <meta name="keywords" content="movie review, film review, movie search, find movie, IMDb rating, movie trailer, where to watch movie, OMDb">
+  <meta name="author" content="SWAROOP">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-SITE-URL.com/" id="canonical-url">
+  <meta property="og:title" content="Movie Review & Search — Rating, Plot, Trailer">
+  <meta property="og:description" content="Get instant movie reviews. Search any film for IMDb rating, plot, trailer & where to watch.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0d0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-video-wrap">
+    <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="bg-video-overlay"></div>
+  </div>
+  <div class="app-content">
+  <header class="header">
+    <h1 class="logo">Movie Search</h1>
+    <p class="tagline">Movie review & search — rating, plot, trailer, where to watch</p>
+  </header>
+
+  <main class="main">
+    <p class="seo-intro">Get instant movie reviews: search any film to see IMDb rating, plot summary, cast, director, trailer, and where to stream or buy.</p>
+    <section class="search-section">
+      <div class="search-wrap">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Enter movie name..."
+            autocomplete="off"
+            aria-label="Search movie by title"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="suggestionsList"
+          >
+          <button type="button" id="searchBtn" class="search-btn" aria-label="Search">
+            Search
+          </button>
+        </div>
+        <div id="suggestionsList" class="suggestions-dropdown" hidden role="listbox"></div>
+      </div>
+      <p id="searchHint" class="search-hint">Try "Avengers", "Inception", or "The Matrix"</p>
+    </section>
+
+    <section id="movieSection" class="movie-section" aria-live="polite">
+      <div id="movieContainer" class="movie-container">
+        <div id="placeholder" class="placeholder">
+          <div class="placeholder-icon">🎬</div>
+          <p>Search for a movie to see its review, rating & details</p>
+        </div>
+        <div id="movieCard" class="movie-card" hidden></div>
+        <div id="errorMessage" class="error-message" hidden></div>
+        <div id="loadingSpinner" class="loading" hidden>
+          <div class="spinner"></div>
+          <p>Searching...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Powered by <a href="https://www.github.com/bandiliswaroop/" target="_blank" rel="noopener">SWAROOP</a></p>
+  </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
